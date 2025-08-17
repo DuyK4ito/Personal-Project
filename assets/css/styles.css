@@ -177,6 +177,18 @@ body {
     justify-content: space-between;
 }
 
+.clients .img a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+
+.clients .img a:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
 /*============== Guides ==============*/
 .guides {
     margin-top: 40px;
@@ -307,6 +319,11 @@ body {
     flex: 1;
     background: #fff;
     border-radius: 12px;
+    transition: box-shadow 0.5s ease;
+}
+
+.featured .list-item:hover {
+    box-shadow: 15px 15px 20px 3px rgba(0, 0, 0, 0.5);
 }
 
 .featured .thumb {
@@ -599,7 +616,6 @@ body {
 .footer .list .item a,
 .footer .column .desc {
     color: #7a7a7e;
-    font-family: Poppins;
     font-size: 1.6rem;
     font-weight: 400;
 }
@@ -619,6 +635,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer .social-media .social-link + .social-link {
+    margin-left: 16px;
 }
 
 .footer .social-media .social-link:hover {
