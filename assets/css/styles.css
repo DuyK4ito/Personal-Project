@@ -44,8 +44,22 @@ body {
 }
 
 /*============== Header ==============*/
-.header {
+.fixed-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.fixed-header .navbar {
+    padding: 12px 0;
+}
+
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #e6f0ff;
     height: 100vh;
 }
@@ -323,7 +337,7 @@ body {
 }
 
 .featured .list-item:hover {
-    box-shadow: 15px 15px 20px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 15px 20px -3px rgba(0, 0, 0, 0.5);
 }
 
 .featured .thumb {
