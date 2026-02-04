@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project 01</title>
+        <title>Besnik - Responsive</title>
 
         <!-- Favicon -->
         <link
@@ -97,15 +97,31 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <div class="wrapper">
-            <header class="fixed-header">
+            <!-- PC header -->
+            <header class="fixed-header pc-header">
                 <div class="content">
+                    <!-- Navigation -->
                     <nav class="navbar">
+                        <!-- Tablet / mobile menu0 -->
+                        <label for="menu-checkbox" class="toggle-menu">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                                />
+                            </svg>
+                        </label>
                         <!-- Logo -->
                         <a href="#">
                             <img
+                                class="logo"
                                 src="./assets/img/logo_fixed.svg"
                                 alt="Besnik."
                             />
@@ -136,6 +152,52 @@
                             <a href="#!" class="btn action-btn">Sign up</a>
                         </div>
                     </nav>
+                </div>
+            </header>
+
+            <!-- Tablet/Mobile header -->
+            <header class="mobile-header">
+                <input
+                    type="checkbox"
+                    name=""
+                    id="menu-checkbox"
+                    class="menu-checkbox"
+                    hidden
+                />
+                <!-- Overlay -->
+                <label for="menu-checkbox" class="menu-overlay"></label>
+
+                <!-- Drawer menu -->
+                <div class="menu-drawer">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img src="./assets/img/logo_fixed.svg" alt="Besnik." />
+                    </a>
+
+                    <!-- Navigation -->
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="hidden-tablet seperate">
+                            <a href="#!" class="action-link">Sign in</a>
+                        </li>
+                        <li class="hidden-tablet">
+                            <a href="#!" class="action-btn">Sign up</a>
+                        </li>
+                    </ul>
                 </div>
             </header>
             <main>
@@ -690,108 +752,107 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="content">
-                        <div class="row row-top">
-                            <!-- Products -->
-                            <div class="column">
-                                <h3 class="heading">Product</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!">Listing</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Property</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Agents</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Blog</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Resources -->
-                            <div class="column">
-                                <h3 class="heading">Resources</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!">Our Homes</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Member Stories</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Video</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Free trial</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Company -->
-                            <div class="column">
-                                <h3 class="heading">Company</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!">Patnerships</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Terms of use</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Privacy</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!">Sitemap</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Get in touch  -->
-                            <div class="column">
-                                <h3 class="heading">Get in touch</h3>
-                                <p class="desc">
-                                    You’ll find your next home, in any style you
-                                    prefer.
-                                </p>
-                                <div class="social-media">
-                                    <a href="#!" class="social-link">
-                                        <img
-                                            src="./assets/img/social-icon/fb-icon.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                    <a href="#!" class="social-link">
-                                        <img
-                                            src="./assets/img/social-icon/twitter-icon.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                    <a href="#!" class="social-link">
-                                        <img
-                                            src="./assets/img/social-icon/linkedIn-icon.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                </div>
-                            </div>
+            </main>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="content">
+                    <div class="row row-top">
+                        <!-- Products -->
+                        <div class="column">
+                            <h3 class="heading">Product</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!">Listing</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Property</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Agents</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Blog</a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="row row-bottom">
-                            <img
-                                src="./assets/img/logo_fixed.svg"
-                                alt="Besnik."
-                                class="logo"
-                            />
-                            <p class="copyright">
-                                Copyright 2020.com, All rights reserved.
+                        <!-- Resources -->
+                        <div class="column">
+                            <h3 class="heading">Resources</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!">Our Homes</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Member Stories</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Video</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Free trial</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Company -->
+                        <div class="column">
+                            <h3 class="heading">Company</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!">Patnerships</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Terms of use</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Privacy</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Get in touch  -->
+                        <div class="column">
+                            <h3 class="heading">Get in touch</h3>
+                            <p class="desc">
+                                You’ll find your next home, in any style you
+                                prefer.
                             </p>
+                            <div class="social-media">
+                                <a href="#!" class="social-link">
+                                    <img
+                                        src="./assets/img/social-icon/fb-icon.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#!" class="social-link">
+                                    <img
+                                        src="./assets/img/social-icon/twitter-icon.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#!" class="social-link">
+                                    <img
+                                        src="./assets/img/social-icon/linkedIn-icon.svg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </footer>
-            </main>
+
+                    <div class="row row-bottom">
+                        <img
+                            src="./assets/img/logo_fixed.svg"
+                            alt="Besnik."
+                            class="logo"
+                        />
+                        <p class="copyright">
+                            Copyright 2020.com, All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

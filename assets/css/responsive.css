@@ -1,0 +1,253 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        z-index: 2;
+        padding: 40px;
+        background: white;
+        transform: translateX(-100%);
+        transition: 0.3s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer ul {
+        margin-top: 20px;
+    }
+
+    .menu-drawer a {
+        display: block;
+        padding: 15px 0 15px 0;
+        color: #333;
+        font-weight: 400;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-wrap .hero-img {
+        display: none;
+    }
+
+    .hero {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .clients .img {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featured .link {
+        font-size: 1.6rem;
+    }
+
+    .subscription .body .image {
+        display: none;
+    }
+
+    .footer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 60px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .hidden-tablet {
+        display: none;
+    }
+
+    .menu-drawer {
+        inset: 0 60% 0 0;
+    }
+
+    .stats .img-block {
+        width: 40%;
+    }
+
+    .stats .img-block .image-1 {
+        width: 380px;
+        height: 440px;
+    }
+
+    .stats .info {
+        padding-left: 135px;
+    }
+
+    .stats .stats-trend {
+        padding: 30px 20px 28px;
+    }
+
+    .stats .qty-item .qty-num {
+        font-size: 5rem;
+    }
+
+    .stats .qty-item .qty-desc {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .pc-header .actions {
+        display: none;
+    }
+
+    .seperate {
+        border-top: 1px solid #d3d3d3;
+    }
+
+    .hero-wrap .title {
+        font-size: 5rem;
+    }
+
+    .clients .desc + .desc {
+        display: none;
+    }
+
+    .guides {
+        padding-bottom: 50px;
+    }
+
+    .guides .desc {
+        font-size: 1.4rem;
+    }
+
+    .guide-list {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .title {
+        font-size: 3.2rem;
+    }
+
+    .stats .img-block {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .stats .stats-trend {
+        padding: 24px 20px 24px;
+    }
+
+    .stats .stats-trend .desc {
+        margin-top: 10px;
+    }
+
+    .stats-trend .row .icon {
+        display: none;
+    }
+
+    .stats .info {
+        width: 100%;
+        padding: 50px 20px;
+        margin-top: 70px;
+    }
+
+    .stats .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats .row-qty {
+        margin-top: 70px;
+        row-gap: 70px;
+    }
+
+    .stats .qty-item .qty-num {
+        font-size: 5rem;
+    }
+
+    .subscription .info .sub-title {
+        color: #fff;
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .subscription .info .desc {
+        margin-bottom: 40px;
+    }
+
+    .footer .row {
+        row-gap: 100px;
+    }
+
+    .footer .row-bottom {
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .list .item {
+        margin-top: 30px;
+    }
+}
